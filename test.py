@@ -1,15 +1,17 @@
+"""
+Calculates the number of ways 2 students can be seated next to each other
+in a classroom, given the desks already occupied.
+
+Args:
+  arr: A list of integers. The first element is the number of desks (K),
+        and the rest are the desks already occupied (in sorted order).
+
+Returns:
+  The number of seating arrangements where 2 students can sit together.
+"""
+
 def seating_students(arr):
-  """
-  Calculates the number of ways 2 students can be seated next to each other
-  in a classroom, given the desks already occupied.
 
-  Args:
-    arr: A list of integers. The first element is the number of desks (K),
-          and the rest are the desks already occupied (in sorted order).
-
-  Returns:
-    The number of seating arrangements where 2 students can sit together.
-  """
   num_desks = arr[0]
   occupied_desks = set(arr[1:])
   count = 0
